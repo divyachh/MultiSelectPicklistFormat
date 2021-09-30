@@ -1,0 +1,7 @@
+public static List<String> MultiSelectPicklistFormat(String value){
+        List<String> valueList = new List<String>();
+        if (String.isNotEmpty(value) && value != '') {
+            valueList = value.split(';');
+        }
+        return valueList;
+    }
